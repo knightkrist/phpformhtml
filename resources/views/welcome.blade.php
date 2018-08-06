@@ -79,16 +79,17 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Form Submission
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            <form class= "" action "{{URL::to('/')}}" method = "post">
+                {{ csrf_field()}}
+                <input type = "text" name="name" value="" placeholder="Name1">
+                <input type = "text" name="last" value="" placeholder="Last">
+                <input type = "text" name="city" value="" placeholder="City">
+
+                <button type="submit" name="button">click me</button>
+                </form>
             </div>
         </div>
     </body>
